@@ -6,30 +6,299 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <style>
-      .column{
-          margin: 20px;
-      }
+*{
+    margin: 0px;
+    padding: 0px;
 
-      .row1{
-          padding: 7px;
-          float: inline;
-      }
+}
 
-      .registerP{
-          float: right;
-          margin-right: 30px;
-      }
-      .in{
-          float: inline;
-      }
-      .displayId{
-          float: inline;
-          margin: 30px;
-      }
-      .registerD{
-          float: left;
-          margin-right: 40px;
-      }
+#content, #loader{
+  float: left;
+}
+
+#loader{
+    position: relative;
+    top: 300px;
+    left: 800px;
+}
+
+
+
+.inline1{
+    float: inline;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 300px;
+    margin-left: 100px;
+    
+}
+
+.inline2{
+    float: inline;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 200px;
+    margin-left: 100px;
+}
+
+.firstpage{
+     float: left;
+     border-radius: 36px;    
+     background: #ebecf0;    
+     box-shadow:  20px 20px 60px #cccdd1, 
+                  -20px -20px 60px #ffffff;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 150px;
+    
+}
+
+.heading{
+    float: left;
+
+}
+.doctor_image{
+    float: right;
+    margin-left: 70px;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.msg{
+    float: left;
+    display: block;
+    margin-left: 660px;
+    margin-top: 100px;
+    margin-right: 500px;
+}
+
+.nue{
+    float: left;
+    border-radius: 20px;    
+    background: #ebecf0;
+    margin-top: 50px;
+    width: 1000px;
+    height: 70px;   
+    margin-left: 400px;
+    margin-right: 300px;
+    align-items: center;
+    display: flex;
+    border-color: aqua;
+    justify-content: center;
+    box-shadow: inset 9px 9px 18px #cfd0d3, 
+                inset -9px -9px 18px #ffffff;
+}
+
+.page2{
+    float: left;
+    display: block;
+    margin-top: 150px;
+}
+
+.registerbutton{
+   margin-top: 170px;
+   margin-left: 1600px;
+   border-radius: 7px;
+   width: 130px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(145deg, #d4d4d8, #fbfdff);
+   box-shadow:  9px 9px 18px #cfd0d3, 
+             -9px -9px 18px #ffffff;
+}
+
+.patientimage{
+    margin-top: 40px;
+    margin-left: 850px;
+    margin-right: 830px;
+    border-radius: 69px;
+    padding: 10px;
+    background: #ebecf0;
+    box-shadow:  5px 5px 9px #cfd0d3, 
+                 -5px -5px 9px #ffffff; 
+}
+#patientinfo{
+    border-radius: 30px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 800px;
+    width: 250px;
+    height: 40px;
+    background: #ebecf0;
+    box-shadow:  14px 14px 29px #cfd0d3, 
+                 -14px -14px 29px #ffffff;
+}
+
+
+.inputid{
+    color: #880e4f;
+    float: left;
+    margin-top: 20px;
+    margin-left: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    width: 500px;
+background: #ebecf0;
+box-shadow:  11px 11px 22px #cfd0d3, 
+             -11px -11px 22px #ffffff;
+}
+
+
+.inputid2{
+    color: #880e4f;
+    margin-left: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    width: 500px;
+    height: 30px;
+    font-size: 20px;
+background: #ebecf0;
+box-shadow:  11px 11px 22px #cfd0d3, 
+             -11px -11px 22px #ffffff;
+}
+
+.inputid3{
+    color: #880e4f;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    width: 300px;
+    font-size: 17px;
+    margin-top: 30px;
+background: #ebecf0;
+box-shadow:  11px 11px 22px #cfd0d3, 
+             -11px -11px 22px #ffffff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #880e4f; /* Firefox */
+  }
+
+.displayall{
+    float: left;
+    padding-top: 100px;
+    padding-bottom:80px;
+    margin-left: 450px;
+    margin-top: 40px;
+    border-radius: 36px;    
+    background: #ebecf0; 
+    margin-bottom: 150px; 
+    box-shadow:  20px 20px 60px #cccdd1, 
+                 -20px -20px 60px #ffffff;
+}
+
+.displayname{
+    border-radius: 8px;
+    width: 500px;
+    margin-left: 250px;
+    height: 60px;
+    display: flex;
+    margin-right: 250px;
+    justify-content: center;
+    align-items: center;
+background: #ebecf0;
+box-shadow:  15px 15px 30px #cfd0d3, 
+             -15px -15px 30px #ffffff;
+}
+
+#searchBar, #ownButton{
+    float: left;
+}
+
+#ownButton{
+    position: relative;
+    left: -360px;
+}
+
+.searchbutton{
+    color: #880e4f;
+    border-radius: 50px;
+background: linear-gradient(145deg, #d4d4d8, #fbfdff);
+box-shadow:  20px 20px 40px #c8c9cc, 
+             -20px -20px 40px #ffffff;
+    border: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+}
+
+.page3{
+    float: left;
+    display: block;
+}
+
+.registerbuttondoctor{
+
+    margin-top: 270px;
+    margin-left: 1600px;
+    border-radius: 7px;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #d4d4d8, #fbfdff);
+    box-shadow:  9px 9px 18px #cfd0d3, 
+              -9px -9px 18px #ffffff;
+
+}
+
+.imagepatient{
+    float:left;
+    border-radius: 84px;
+    background: #ebecf0;
+    box-shadow:  11px 11px 22px #c8c9cc, 
+                 -11px -11px 22px #ffffff;
+}
+
+.headingpage2{
+    float: left;
+    margin-left: 550px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nue2{
+    float: left;
+    border-radius: 20px;    
+    background: #ebecf0;
+    width: 600px;
+    height: 70px;   
+    align-items: center;
+    display: flex;
+    border-color: aqua;
+    justify-content: center;
+    box-shadow: inset 9px 9px 18px #cfd0d3, 
+                inset -9px -9px 18px #ffffff;
+}
+
+.updateAge{
+    float: left;
+    display: block;
+    margin-top: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    padding: 50px;
+    border-radius: 20px;
+background: linear-gradient(145deg, #d4d4d8, #fbfdff);
+box-shadow:  20px 20px 60px #c8c9cc, 
+             -20px -20px 60px #ffffff;
+}
+
+
 
 
   </style>
@@ -45,188 +314,201 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Welcome to Hospital Record</h1>
+  <body style="background-color:#ebecf0;">
 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-  
+      
   
     <div class="row1" id="loader">
-      <p>Loading.....</p>
+        <p>Loading.....</p>
+      </div>
+      <div class="column" id="content">
+    <div class="firstpage">
+        <div class="heading">
+            <div class="inline1">
+                   <p style="font-size: 20px;">Welcome to</p> 
+            </div>
+    
+            <div class="inline2">
+                <p style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:100px;"><b>Hospital Record</b></p>
+            </div>
+        </div>
+    
+        <div class="doctor_image">
+                <lottie-player src=""  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
+              </div>
+      </div>
+
+      <div class="firstpagedown" id="explainpart">
+        <div style="margin-left: 520px;">
+          <lottie-player src="https://assets8.lottiefiles.com/datafiles/5FFwoVNq8EcKMH4/data.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>
+        </div>
+        <div class="msg">
+          <p style="margin-left: 50px; font-size: 25px;">Want to have all your hospital records at one place?</p>
+          <p style="margin-left: 100px; font-size: 25px;">Just Register yourself and there you go!!  </p>
+        </div>
+      </div>
+
+
+          
+      <div class="page2" id="page2id">
+    
+        <div class="nue" id="view_info">
+          <p style="font-size: 35px; color: #0a4ac2">Get information about your doctor or about your own records</p>
+        </div>
+     
+       <div class="registerbutton" onclick="document.getElementById('patient_reg').scrollIntoView();" id="regp">
+         <h4>Register</h4>
+       </div>
+     
+       <div class="patientimage">
+         <img src="https://www.yellow.com.au/wp-content/uploads/2018/10/YEL160_Jan-Avatar-Grey-300x300.png" width="130" height="130" alt="patient">
+       </div>
+     
+       <div class="info">
+      
+       <div class="patientinfo" id="patientinfo">
+        <select name="infoall" id="info" style="border: none; background-color: #ebecf0;" onchange="selectinput()">
+          <option value="own">View your own record</option>
+          <option value="doctor">View doctor's record</option>
+          <option value="patient">View patient's record</option>
+        </select>
+       </div>
+     
+       </div>
+      
+      <div> 
+       <div class="searchbar" id="searchBar"  style="visibility: hidden;">
+         <input id="id" type="number" placeholder="Enter the Id of doctor to view record"class="inputid">
+         <button onclick="checkWho()" class="searchbutton">Search</button>
+       </div>
+     
+       <div class="searchbar" id="ownButton">
+         <button onclick="App.showPatientbyOwn();" class="searchbutton">Search</button>
+       </div>
+     </div>
+     
+       <div class="displayall">
+       <div class="displayname">
+         <p id="id_display" style="color: #007c91;">display id</p>
+       </div>
+     
+     
+       <div class="displayname">
+         <p id="name_display" style="color: #007c91;">display name</p>
+       </div>
+     
+     
+       <div class="displayname">
+         <p id="age_display" style="color: #007c91;">display age</p>
+       </div>
+     
+     
+       <div class="displayname">
+         <p id="disease_display" style="color: #007c91;">display disease</p>
+       </div>
+     
+     </div>
+       </div>
+
+               
+      <div class="page3">
+    
+        <div class="headingpage2">
+    
+          <div class="nue2" id="patient_reg">
+            <p style="font-size: 35px; color: #0a4ac2">We Welcome our Patients</p>
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_MjtwYL.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop  autoplay></lottie-player>
+          </div>
+    
+        <div class="imagepatient">
+          <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_bcVsEA.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>
+        </div>
+    
+    
+      </div>
+    
+      <div class="registerbuttondoctor" onclick="document.getElementById('doctor_reg').scrollIntoView();" id="regd">
+        <h4>Register Doctor</h4>
+      </div>
+      
+      <div id="enterName">
+        <input id="name" type="text" placeholder="Enter your full name"class="inputid2">
+      </div>
+    
+        <div id="enterAge" style="margin-top: 30px;"> 
+        <input id="age" type="number" placeholder="Enter your age"class="inputid2">
+      </div>
+    
+      <button onclick="App.recordPatient();" id="patient_done" class="searchbutton" style="margin-left: 800px; margin-top: 50px;">Register</button>
+    
+      <div>
+          <div class="updateAge" style="margin-left: 300px;">
+            <p style="font-size: 20px;">Update your Age (only for registered patients)</p>
+            <input id="update_age" type="number" placeholder="Age" class="inputid3">
+            <button onclick="App.updateAge();" id="age_update" class="searchbutton">Update</button>
+          </div>
+        <div class="updateAge" style="margin-left: 100px;">
+          <p style="font-size: 20px;">
+            Record your disease (only for registered patients)</p>
+            <input id="disease" type="text" placeholder="Disease (one at each time)" class="inputid3">
+            <button onclick="App.recordDisease();" id="disease_reg" class="searchbutton">Record</button>
+        </div>
+       
+      </div>
+    
+    
+            
     </div>
 
-    <div class="column" id="content">
 
-      <div class="column">
-          <div class="registerP">
-              <button  onclick="document.getElementById('regd').scrollIntoView();" id="regp" class="regP">Register</button>
-          </div>
-          <div class="row1">
-              <h3>Enter the ID of doctor/Patient to view repective information</h3>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-          </div>
+    <div class="page3">
+    
+        <div class="headingpage2">
+      
+          <div class="nue2" id="doctor_reg">
+            <p style="font-size: 35px; color: #0a4ac2; margin-right: 20px;">We Welcome our Doctors</p>
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_eqCI4X.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop  autoplay></lottie-player>    </div>
+      
+        <div class="imagepatient">
+          <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_42B8LS.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>  </div>
+      
+      
       </div>
-  
-      <br/>
-      <div class="in">
-
-        <div class="displayID">
-          <label for="id1"><b>Id</b></label>
-          <input type="number" placeholder="Enter the Id for a patient" id="id" name="id1" required>
-          <button onclick="App.showPatientbydoctor();">OK</button>
-        </div>
-          <br/>
-          <br/>
-          <div class="displayId">
-              <button onclick="App.showPatientbyOwn();" id="own">View your own Record(only for patients)</button>
-          </div>
-
-          <div class="displayID">
-            <label for="a"><b>Id</b></label>
-            <input type="number" placeholder="Enter the Id for a doctor" id="id_d" required>
-            <button onclick="App.showDoctor();">OK</button>
-          </div>
-
-          <br/>
-          <br/>
+      
+      <div class="registerbuttondoctor" onclick="document.getElementById('view_info').scrollIntoView();" id="RegP">
+        <h4>Register Patient</h4>
       </div>
-  
-      <div class="column">
-          <div class="displayId" >
-              <p id="id_display">A </p>
-              <br/>
-          </div>
-          <div class="displayId">
-              <p  id="name_display">B </p>
-              <br/>
-          </div>
-          <div class="displayId" >
-              <p id="age_display">C </p>
-              <br/>
-          </div>
-          <div class="displayId">
-              <p id="disease_display">D </p>
-              <br/>
-          </div>
-          <div class="displayId">
-              <p>A1 </p>
-              <br/>
-          </div>
-          <div class="displayId">
-              <p>B1 </p>
-              <br/>
-          </div>
-          <div class="displayId">
-              <p>C1 </p>
-              <br/>
-          </div>
-          <div class="displayId">
-              <p>D1 </p>
-              <br/>
-          </div>
+      
+      <div id="enterNamed">
+        <input id="name2" type="text" placeholder="Enter your full name"class="inputid2">
       </div>
-  
-      <div class="column1">
-          <div class="registerD" id="regD">
-              <button  onclick="document.getElementById('regP').scrollIntoView();" id="regd" class="regP">Register Doctor</button>
-          </div>
-  
-          <div class="column">
-              <p>REgister A particular patient</p>
-          </div>
+      
+        <div id="enterdegree" style="margin-top: 30px;"> 
+        <input id="edu" type="text" placeholder="Enter your Degree"class="inputid2">
       </div>
-  
-      <div class="column">
-  
-          <div class="displayId">
-              <label for="id2"><b>Name</b></label>
-              <input id="name" type="text" placeholder="Enter your name" required>
-          </div>
-  
-          <div class="displayId">
-              <label for="age2"><b>Age</b></label>
-              <input id="age" type="number" placeholder="Enter your age" required>
-          </div>
-  
-          <div class="displayId">
-              <button  onclick="App.recordPatient();" id="patient_done">Register me</button>
-          </div>
-  
+      
+      <div id="enterAdressd" style="margin-top: 30px;"> 
+        <input id="place" type="text" placeholder="Enter address of your Hospital"class="inputid2">
       </div>
-  
-      <div class="column">
-          <div class="displayId">
-              <p>Add your diseases</p>
-          </div>
-  
-          <div class="displayId">
-              <label><b>Disease</b></label>
-              <input id="disease" type="text" placeholder="Enter one disease each time" required>
-          </div>
-  
-          <div class="displayId">
-              <button onclick="App.recordDisease();" id="disease_reg">Upload the disease</button>
-          </div>
-
-          <div class="displayId">
-            <label><b>Age Update</b></label>
-            <input id="update_age" type="text" placeholder="Enter the updated age" required>
-        </div>
-
-        <div class="displayId">
-            <button onclick="App.updateAge();" id="age_update">Update the age</button>
-        </div>
-  
+      
+      <button onclick="App.recordDoctor();" id="doctor_done" class="searchbutton" style="margin-left: 800px; margin-top: 50px;">Register</button>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>  
+      
+      
+      <div class="headingpage2">
+      <h3 style="margin-left: 200px;">Made with</h3>
+      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_b5Fjvs.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
+      <h3>by Madhura Kunjir</h3>  
       </div>
-  
-      <div class="column1">
-          <div class="registerP" id="regP">
-              <button  onclick="document.getElementById('regD').scrollIntoView();" id="RegP" class="regP">Register Patient</button>
-          </div>
-  
-          <div class="column">
-              <p>REgister A particular doctor</p>
-          </div>
       </div>
-  
-      <div class="column">
-  
-          <div class="displayId">
-              <label for="id3"><b>Name</b></label>
-              <input id="name2" type="text" placeholder="Enter your name" required>
-          </div>
-  
-          <div class="displayId">
-              <label for="age3"><b>Degree</b></label>
-              <input id="edu" type="text" placeholder="Enter your Degree" required>
-          </div>
-  
-          <div class="displayId">
-              <label for="age3"><b>Place</b></label>
-              <input id="place" type="text" placeholder="Enter your Place/Address" required>
-          </div>
-  
-          <div class="displayId">
-              <button onclick="App.recordDoctor();" id="doctor_done">Register me</button>
-          </div>
-  
       </div>
 
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -235,5 +517,35 @@
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
-  </body>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+
+        function selectinput(){
+          if(document.getElementById("info").selectedIndex == "0"){
+            document.getElementById("ownButton").style.visibility = "visible";
+            document.getElementById("searchBar").style.visibility = "hidden";
+          }
+          else if(document.getElementById("info").selectedIndex == "1"){
+            document.getElementById("ownButton").style.visibility = "hidden";
+            document.getElementById("searchBar").style.visibility = "visible";
+          }
+          else if(document.getElementById("info").selectedIndex == "2"){
+            document.getElementById("ownButton").style.visibility = "hidden";
+            document.getElementById("searchBar").style.visibility = "visible";
+          }
+        }
+    
+        function checkWho(){
+          if(document.getElementById("info").selectedIndex == "1"){
+            App.showDoctor();
+          }
+          else if(document.getElementById("info").selectedIndex == "2"){
+            App.showPatientbydoctor();
+          }
+        }
+    
+      
+    
+      </script>  
+</body>
 </html>
