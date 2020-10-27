@@ -73,6 +73,8 @@ App = {
      if(eror == null){
        App.account = account;
        alert("Your account is : " + account);
+       var addressA = $("#address");
+       addressA.text("Your account address : " + account);
      }
     });
 
@@ -182,7 +184,7 @@ App = {
       show_disease.text(event[3]);
     })
     .catch(function(eror){
-      alert("You may not have access to this account");
+      alert("You may not have access to this account.");
     });
 
   },
@@ -206,7 +208,7 @@ App = {
         show_disease.text(event[3]);
     })
     .catch(function(eror){
-      alert("Either this id does not exist or you may not have access to the account");
+      alert("Either this id does not exist or you have to be a doctor to view this information");
     });
 
 
@@ -214,7 +216,7 @@ App = {
 
   showDoctor: function(){
 
-    var id = $("#id_d");
+    var id = $("#id");
     var show_id = $("#id_display");
     var show_name = $("#name_display");
     var show_age = $("#age_display");
@@ -225,8 +227,8 @@ App = {
     })
     .then(function(event){
       show_id.text(event[0]);
-      show_name.text(event[2]);
-      show_age.text(event[1]);
+      show_name.text(event[1]);
+      show_age.text(event[2]);
       show_disease.text(event[3]);
     })
     .catch(function(eror){

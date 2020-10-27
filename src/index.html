@@ -23,6 +23,20 @@
 }
 
 
+.address{
+
+  
+  margin-top: 30px;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
+  color: #880e4f;
+  font-style: oblique;
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 8px;
+
+}
 
 .inline1{
     float: inline;
@@ -324,17 +338,24 @@ box-shadow:  20px 20px 60px #c8c9cc,
       <div class="column" id="content">
     <div class="firstpage">
         <div class="heading">
+
+          <div class="address" id="address">
+
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:25px; margin-top: 50px; margin-left: 500px; color: #880e4f; font-style: oblique;">Your current address will be displayed here</p>
+    
+          </div>
+
             <div class="inline1">
                    <p style="font-size: 20px;">Welcome to</p> 
             </div>
     
             <div class="inline2">
-                <p style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:100px;"><b>Hospital Record</b></p>
+                <p style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:100px; color: darkblue;"><b>Hospital Record</b></p>
             </div>
         </div>
     
         <div class="doctor_image">
-                <lottie-player src=""  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
+                <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_4FGi6N.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
               </div>
       </div>
 
@@ -368,7 +389,7 @@ box-shadow:  20px 20px 60px #c8c9cc,
       
        <div class="patientinfo" id="patientinfo">
         <select name="infoall" id="info" style="border: none; background-color: #ebecf0;" onchange="selectinput()">
-          <option value="own">View your own record</option>
+          <option value="own">View your own record (only Patient)</option>
           <option value="doctor">View doctor's record</option>
           <option value="patient">View patient's record</option>
         </select>
@@ -378,7 +399,7 @@ box-shadow:  20px 20px 60px #c8c9cc,
       
       <div> 
        <div class="searchbar" id="searchBar"  style="visibility: hidden;">
-         <input id="id" type="number" placeholder="Enter the Id of doctor to view record"class="inputid">
+         <input id="id" type="number" placeholder="Enter the Id to view record"class="inputid">
          <button onclick="checkWho()" class="searchbutton">Search</button>
        </div>
      

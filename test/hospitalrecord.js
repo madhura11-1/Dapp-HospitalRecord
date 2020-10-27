@@ -5,7 +5,7 @@ contract("HospitalRecord",function(accounts) {
          return HospitalRecord.deployed()
          .then(function(instance){
              contractinstance = instance;
-             assert(contractinstance !== undefined,"HospitalRecord contract neends to be defined");
+             assert(contractinstance !== undefined,"HospitalRecord contract needs to be defined");
          })
      });
 
@@ -33,6 +33,18 @@ contract("HospitalRecord",function(accounts) {
          })
      });
 
+     it("Adds a disease of the patient",function(){
+
+        return contractinstance.addNewDisease("Cough",{from : accounts[2]})
+        .then(function(receipt){
+            return contractinstance.viewPatientbyDoctor(1,{from : accounts[1]});
+        })
+        .then(function(result){
+            assert.equal(result[3],", Cough","Patient's diseases displayed");
+        })
+
+     });
+
      it("Updates the age of Patient",function(){
          return contractinstance.updateAge(50,{from : accounts[2]})
          .then(function(result){
@@ -57,4 +69,21 @@ contract("HospitalRecord",function(accounts) {
              }
          })
      });
+
+
+     it("Non registered doctors cannot view the patient's information",function(){
+         return contractinstance.viewPatientbyDoctor(1,{from : accounts[4]})
+     .then(function(result){
+         throw("not registered");
+     }).catch(function(e){
+         let a = e.toString();
+         if(a === "not registered"){
+             assert(false);
+         }
+         else{
+             assert(true);
+         }
+     })
+    });
+
 });
