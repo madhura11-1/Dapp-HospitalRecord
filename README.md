@@ -2,6 +2,7 @@
 
 A decentralized application to manage your hospital records with no burden to carry all the files that we do usually.
 This system proposes an idea to keep your hospital record safe on the distibuted ledger without anyone to change or modify it.
+
 There are two types of users involved into this system : 1. Doctor
                                                          2. Patient
         
@@ -32,8 +33,8 @@ To run this project :
 7. Then run `npm run dev`. This will start the project in the browser
 8. Make sure that your metamask is connected to the site (Import accounts from Ganache blockchain into metamask).
 
-Other features that can be added into the project : 
-1.To verify the doctor you can store the certificate on the IPFS and store its has in the smart contract.
+Other features that can be added into the project :  
+1.To verify the doctor you can store the certificate on the IPFS and store its has in the smart contract.    
 2. Same for patient, The patients documents can be stored on IPFS and its hash can be included into the smart contract.
 
 
