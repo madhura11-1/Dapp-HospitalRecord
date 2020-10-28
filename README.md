@@ -21,13 +21,13 @@ This wasy Patient's records will also be safe.
 The project is a truffle project and runs on local host.
 To run this project :
 
-1. Install npm package manager
-2. Install truffle
-3. Run 'truffle compile'
-4. Open another terminal and start development blockchain by running 'truffle develop' in same directory
-5. Then on first terminal run 'truffle test'
-6. Then run 'truffle migrate --reset'
-7. Then run 'npm run dev'. This will start the project in the browser
+1. Install npm package manager and node : `sudo apt install nodejs` , `sudo apt install npm`
+2. Install truffle : `npm install -g truffle`
+3. Run `truffle compile`
+4. Open another terminal and start development blockchain by running `truffle develop` in same directory
+5. Then on first terminal run `truffle test`
+6. Then run `truffle migrate --reset`
+7. Then run `npm run dev`. This will start the project in the browser
 8. Make sure that your metamask is connected to the site (Import accounts from the truffle development blockchain into metamask)
 
 
