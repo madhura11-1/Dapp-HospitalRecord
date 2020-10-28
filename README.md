@@ -26,11 +26,15 @@ To run this project :
 3. Install Ganache : https://www.trufflesuite.com/ganache
 4. Run `truffle compile` from the project directory in terminal
 5. Start the Ganache and choose `Quickstart Ethereum`
-6. Make sure that the local host url on Ganache and in `truffle-config.js is same`.
+6. Make sure that the local host url on Ganache and in `truffle-config.js` is same.
 6. Then on terminal run `truffle test`
 6. Then run `truffle migrate --reset`
 7. Then run `npm run dev`. This will start the project in the browser
 8. Make sure that your metamask is connected to the site (Import accounts from Ganache blockchain into metamask).
+
+Other features that can be added into the project : 
+1.To verify the doctor you can store the certificate on the IPFS and store its has in the smart contract.
+2. Same for patient, The patients documents can be stored on IPFS and its hash can be included into the smart contract.
 
 
 
