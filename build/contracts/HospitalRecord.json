@@ -12973,12 +12973,13 @@
         }
       },
       "links": {},
-      "address": "0x80b10e00132C61dEAE64DC38Ab0ACB14a3d6939E",
-      "transactionHash": "0x21d82e6ab5dc652289a326692f5fce0299c7c459e61a5eedf8e578651256062a"
+      "address": "0x01350Baf5871a5F0150C788C967CF83a5dCb2026",
+      "transactionHash": "0x004cf3b493c2fbaaa948f98d9336a4b760d8e450f7970a81edd7a433fcd44ffb"
     }
   },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-10-28T05:45:30.987Z",
+  "updatedAt": "2020-10-29T05:34:58.312Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {
       "addNewDisease(string)": {
